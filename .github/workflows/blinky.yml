@@ -64,7 +64,7 @@ jobs:
     - name: Run tests
       id: avh
       run: |
-        printenv ARM_UBL | base64 -d | bunzip2 > Blinky_Cortex-M85/ubuntu-ubl.binlic
+        # printenv ARM_UBL | base64 -d | bunzip2 > Blinky_Cortex-M85/ubuntu-ubl.binlic
         avhclient -b aws execute --specfile Blinky_Cortex-M85/avh.yml
         count=$(grep -c "LED" Blinky_Cortex-M85/vht.log)
         echo "Found 'LED' ${count} times in vht.log ..."
