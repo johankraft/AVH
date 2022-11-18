@@ -58,8 +58,9 @@ jobs:
       with:
         role-to-assume: arn:aws:iam::195735210697:role/Proj-AVHRole
         # role-to-assume: arn:aws:iam::720528183931:role/Proj-vht-assume-role
-        aws-region: eu-west-1
-
+        aws-region: eu-north-1
+        # aws-region: eu-west-1
+        
     - name: Run tests
       id: avh
       run: |
