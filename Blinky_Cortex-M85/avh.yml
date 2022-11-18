@@ -2,8 +2,8 @@ name: "AVH Blinky Example for Cortex-M85"
 workdir: ./
 backend:
   aws:
-    ami-version: ~=1.2
-    instance-type: t2.micro
+    ami-version: ~=1.3
+    instance-type: t3.micro
 upload:
   - AC6.6.18.0.cmake
   - RTE/**/*
