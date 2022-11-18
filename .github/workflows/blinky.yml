@@ -49,8 +49,11 @@ jobs:
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
-        role-to-assume: arn:aws:iam::720528183931:role/Proj-vht-assume-role
-        aws-region: eu-west-1
+        role-to-assume: arn:aws:iam::195735210697:role/Proj-AVHRole
+        aws-region: eu-north-1
+        
+        # role-to-assume: arn:aws:iam::720528183931:role/Proj-vht-assume-role
+        # aws-region: eu-west-1
 
     - name: Install AVH Client for Python
       run: |
